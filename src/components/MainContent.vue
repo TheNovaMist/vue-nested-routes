@@ -1,12 +1,12 @@
 <template>
   <div class="main-aside">
-    <span>Aside</span>
+    <span>Main</span>
   </div>
 </template>
 
 <style scoped>
 .main-aside {
-  background-color: wheat;
+  background-color: tomato;
   height: 100%;
 }
 </style>
