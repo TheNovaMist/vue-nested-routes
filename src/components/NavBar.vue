@@ -9,6 +9,9 @@
     <RouterLink to="/about">
       <el-button type="primary">About</el-button>
     </RouterLink>
+    <RouterLink to="/person">
+      <el-button type="primary">Person</el-button>
+    </RouterLink>
   </div>
 </template>
 
