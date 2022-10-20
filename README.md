@@ -1,7 +1,8 @@
-# Vue 3 + Vite
+# Note
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+组件的写法：
 
-## Recommended IDE Setup
+- `<RouterView>`
+- `<router-view>`
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+访问不同网址改变的是 `<RouterView>` 的显示，根组件中嵌套的组件会一直显示（可以看作是 layout）。
