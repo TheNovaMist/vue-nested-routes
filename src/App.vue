@@ -1,31 +1,26 @@
 <script setup>
+import NavBar from "./components/NavBar.vue";
+import MainAside from "./components/MainAside.vue";
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="main-layout">
+    <el-container>
+      <el-header> <NavBar /> </el-header>
+
+      <el-container>
+        <el-aside width="200px"><MainAside /></el-aside>
+        <el-main>Main</el-main>
+      </el-container>
+    </el-container>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.main-layout {
+  background-color: burlywood;
+  height: 100%;
 }
 </style>
